@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
             res.send('Error reaching dynamodb');
         } else {
             console.log("Incremented counter to: " + data.Attributes.counter_count);
-            res.send('Page Impressions: ' + data.Attributes.counter_count + '<br>Version 3');
+            res.send('TITANS Page Refresh count: ' + data.Attributes.counter_count + '<br>APPRUNNER');
         }
     });
 })
